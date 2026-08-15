@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Arif Organic Farm — Explore our fertile crop rows, heirloom vegetable harvests, biodynamic soil, and daily farm life.">
+  <title>Farmland Photo Gallery — Arif Organic Farm</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div>
+        <span>🌱 <strong class="top-bar-highlight">Fresh Morning Harvest:</strong> 100% Certified Chemical-Free Produce</span>
+      </div>
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <span>📞 Farm Gate:</span>
+          <strong>+91 98765 43210</strong>
+        </div>
+        <div class="top-bar-item">
+          <span>📍 Green Valley Road, Agro District</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Arif Organic Farm Home">
+        <div class="logo-icon-box">
+          <img src="images/logo.svg" alt="Arif Organic Farm Emblem Logo">
+        </div>
+        <div class="brand-name">
+          <span class="main-title">ARIF ORGANIC FARM</span>
+          <span class="sub-title">GROWN NATURALLY • DELIVERED FRESH</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Organic Products</a>
+        <a href="farm.html" class="nav-link">Our Farm</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="cart-toggle-btn" aria-label="View shopping basket" title="View shopping basket">
+          <span>🧺</span>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" style="display: inline-flex;">Visit Farm</a>
+
+        <button class="mobile-nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">Farmland & Harvest Gallery</h1>
+      <p class="page-hero-subtitle">A visual celebration of chemical-free agriculture, living soils, open pastures, and morning field pickings.</p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section section-white">
+    <div class="container">
+
+      <!-- Gallery Filter Category Tabs -->
+      <div class="products-filter-bar reveal-on-scroll" style="justify-content: center;">
+        <div class="filter-tabs">
+          <button class="filter-btn gallery-filter-btn active" data-filter="all">All Photos (12)</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="harvest">Fresh Harvest</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="fields">Farmland & Fields</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="farmers">Farmers at Work</button>
+          <button class="filter-btn gallery-filter-btn" data-filter="nature">Nature & Sunrise</button>
+        </div>
+      </div>
+
+      <!-- Interactive Gallery Grid (Exact 12 Items Matching Reference) -->
+      <div class="gallery-grid">
+
+        <!-- 1. Misty Morning Sunrise Over Valley -->
+        <div class="gallery-item reveal-on-scroll" data-category="fields">
+          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" alt="Misty Morning Sunrise Over Valley">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Agro Vista</span>
+            <h3 class="gallery-overlay-title">Misty Morning Sunrise Over Valley</h3>
+          </div>
+        </div>
+
+        <!-- 2. Proud Dawn Harvest of Heirloom Crops (Farmer Arif) -->
+        <div class="gallery-item reveal-on-scroll" data-category="farmers">
+          <img src="images/hero-farmer-arif.jpg" alt="Farmer Arif proudly holding fresh dawn harvest basket">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Farm Leadership</span>
+            <h3 class="gallery-overlay-title">Proud Dawn Harvest of Heirloom Crops</h3>
+          </div>
+        </div>
+
+        <!-- 3. Careful Hand-Picking at First Light -->
+        <div class="gallery-item reveal-on-scroll" data-category="farmers">
+          <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=800&q=80" alt="Careful Hand-Picking at First Light">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Field Work</span>
+            <h3 class="gallery-overlay-title">Careful Hand-Picking at First Light</h3>
+          </div>
+        </div>
+
+        <!-- 4. Rich Microbial Compost & Earthy Humus -->
+        <div class="gallery-item reveal-on-scroll" data-category="fields">
+          <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=800&q=80" alt="Rich Microbial Compost and Earthy Humus">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Living Soil</span>
+            <h3 class="gallery-overlay-title">Rich Microbial Compost & Earthy Humus</h3>
+          </div>
+        </div>
+
+        <!-- 5. Bountiful Basket Ready for Morning Packing -->
+        <div class="gallery-item reveal-on-scroll" data-category="harvest">
+          <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=800&q=80" alt="Bountiful Basket Ready for Morning Packing">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Daily Harvest</span>
+            <h3 class="gallery-overlay-title">Bountiful Basket Ready for Morning Packing</h3>
+          </div>
+        </div>
+
+        <!-- 6. Vine-Ripened Heirloom Tomatoes -->
+        <div class="gallery-item reveal-on-scroll" data-category="harvest">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Vine-Ripened Heirloom Tomatoes">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Vineyard Bed</span>
+            <h3 class="gallery-overlay-title">Vine-Ripened Heirloom Tomatoes</h3>
+          </div>
+        </div>
+
+        <!-- 7. Morning Dew on Crisp Baby Palak -->
+        <div class="gallery-item reveal-on-scroll" data-category="harvest">
+          <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80" alt="Morning Dew on Crisp Baby Palak">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Leafy Greens</span>
+            <h3 class="gallery-overlay-title">Morning Dew on Crisp Baby Palak</h3>
+          </div>
+        </div>
+
+        <!-- 8. Native Mangoes, Bananas & Pomegranates -->
+        <div class="gallery-item reveal-on-scroll" data-category="harvest">
+          <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=800&q=80" alt="Native Mangoes, Bananas and Pomegranates">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Orchard Harvest</span>
+            <h3 class="gallery-overlay-title">Native Mangoes, Bananas & Pomegranates</h3>
+          </div>
+        </div>
+
+        <!-- 9. Sunday Community Harvest Experience -->
+        <div class="gallery-item reveal-on-scroll" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Sunday Community Harvest Experience">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Farm Walks</span>
+            <h3 class="gallery-overlay-title">Sunday Community Harvest Experience</h3>
+          </div>
+        </div>
+
+        <!-- 10. Golden Hour Mist Settling on Crop Beds -->
+        <div class="gallery-item reveal-on-scroll" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=800&q=80" alt="Golden Hour Mist Settling on Crop Beds">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Atmosphere</span>
+            <h3 class="gallery-overlay-title">Golden Hour Mist Settling on Crop Beds</h3>
+          </div>
+        </div>
+
+        <!-- 11. Heirloom Seedling Planting (Farmer Arif Planting in Soil) -->
+        <div class="gallery-item reveal-on-scroll" data-category="farmers">
+          <img src="images/farmer-planting-arif.jpg" alt="Farmer Arif carefully planting heirloom seedling in living soil">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Farmers at Work</span>
+            <h3 class="gallery-overlay-title">Heirloom Seedling Planting</h3>
+          </div>
+        </div>
+
+        <!-- 12. Solar-Powered Drip Irrigation & Pond -->
+        <div class="gallery-item reveal-on-scroll" data-category="fields">
+          <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Solar-Powered Drip Irrigation and Pond">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-cat">Ecology</span>
+            <h3 class="gallery-overlay-title">Solar-Powered Drip Irrigation & Pond</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Want to see these fields in person and pick fresh vegetables directly from the vine?
+        </p>
+        <a href="contact.html" class="btn btn-primary">
+          <span>Schedule a Weekend Farm Walk</span>
+          <span>📅</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top" title="Scroll to top">&#8593;</button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-icon-box">
+              <img src="images/logo.svg" alt="Arif Organic Farm Emblem Logo">
+            </div>
+            <div class="brand-name">
+              <span class="main-title" style="color: #ffffff;">ARIF ORGANIC FARM</span>
+              <span class="sub-title" style="color: #a7f3d0;">GROWN NATURALLY • DELIVERED FRESH</span>
+            </div>
+          </a>
+          <p class="footer-text">
+            Dedicated to chemical-free regenerative farming, heirloom biodiversity, and delivering uncompromised organic nourishment straight from our fertile fields to your kitchen.
+          </p>
+          <div class="footer-social-wrapper">
+            <div class="footer-social-title">Follow Us On Social Media</div>
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill linkedin" aria-label="LinkedIn">
+                <span class="social-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-pill instagram" aria-label="Instagram">
+                <span class="social-icon">📷</span>
+                <span>Instagram</span>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-pill facebook" aria-label="Facebook">
+                <span class="social-icon">📘</span>
+                <span>Facebook</span>
+              </a>
+              <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-pill whatsapp" aria-label="WhatsApp">
+                <span class="social-icon">💬</span>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-pill youtube" aria-label="YouTube">
+                <span class="social-icon">▶️</span>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore Farm</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><span>›</span> Home</a></li>
+            <li><a href="about.html"><span>›</span> Our Story & Leadership</a></li>
+            <li><a href="products.html"><span>›</span> Fresh Produce Store</a></li>
+            <li><a href="farm.html"><span>›</span> Seed to Harvest Process</a></li>
+            <li><a href="gallery.html"><span>›</span> Farmland Photo Gallery</a></li>
+            <li><a href="contact.html"><span>›</span> Visit & Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Farm Details</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Green Valley Organic Belt, Sector 14, Agro Region</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>contact@ariforganicfarm.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">⏰</span>
+            <span>Farm Gate: 6:00 AM – 7:00 PM (All Days)</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Weekly Harvest Alerts</h4>
+          <p class="footer-text">
+            Subscribe to receive our weekly list of freshly picked seasonal fruits and vegetables.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('🌱 Thank you for subscribing to Arif Farm harvest alerts!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-secondary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Arif Organic Farm. All Rights Reserved. Built with HTML5, CSS3, & Vanilla JavaScript.</p>
+        <p>100% Certified Organic • Pesticide-Free Pledge • Sustainable Agriculture</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>
